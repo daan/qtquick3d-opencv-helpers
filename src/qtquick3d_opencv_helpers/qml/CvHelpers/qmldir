@@ -2,4 +2,6 @@ module CvHelpers
 
 AxisArrow 0.1 AxisArrow.qml
 Grid 0.1 Grid.qml
+CameraFrustum 0.1 CameraFustum.qml
+ArucoMarker 0.1 ArucoMarker.qml
 
