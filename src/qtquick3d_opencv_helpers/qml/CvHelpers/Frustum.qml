@@ -1,6 +1,6 @@
 import QtQuick
 import QtQuick3D
-import CameraFrustum 1.0
+import CvHelpers
 
 Node {
     id: root
@@ -10,7 +10,7 @@ Node {
     property real scale: 0.5 // Controls the size of the frustum visualization
 
     Model {
-        geometry: CameraFrustumGeometry {
+        geometry: FrustumGeometry {
             fov: root.fov
             aspectRatio: root.aspectRatio
             scale: root.scale

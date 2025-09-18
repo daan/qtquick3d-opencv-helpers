@@ -8,7 +8,7 @@ Window {
     width: 1280
     height: 720
     visible: true
-    title: "Minimal Aruco Example"
+    title: "Minimal Camera Frustum"
 
     View3D {
         id: view
@@ -52,18 +52,8 @@ Window {
         Node {
             id: sceneRoot
             Grid {
-            }
-            Repeater3D {
-                model: markerController.markers
-
-                delegate: ArucoMarker {
-                    Component.onCompleted: console.log("ArucoMarker created for textureData:", modelData.textureData)
-                    position: modelData.position
-                    rotation: modelData.rotation
-                    markerSize: modelData.size
-                    textureData: modelData.textureData
-                }
-            }
-        }
+	    }
+	    Frustum {}
+       }
     }
 }

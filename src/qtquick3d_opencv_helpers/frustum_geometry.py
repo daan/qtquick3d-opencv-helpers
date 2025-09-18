@@ -6,7 +6,7 @@ from PySide6.QtGui import QVector3D
 from PySide6.QtQuick3D import QQuick3DGeometry
 
 
-class CameraFrustumGeometry(QQuick3DGeometry):
+class FrustumGeometry(QQuick3DGeometry):
     fovChanged = Signal()
     aspectRatioChanged = Signal()
     scaleChanged = Signal()
