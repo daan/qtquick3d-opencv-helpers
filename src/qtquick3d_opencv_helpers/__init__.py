@@ -1,5 +1,4 @@
 from PySide6.QtQml import qmlRegisterType
-from .backend import SystemMonitor
 
 from .grid_geometry import GridLinesGeometry, AxisLineGeometry
 
