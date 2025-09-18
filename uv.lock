@@ -195,10 +195,15 @@ wheels = [
 [[package]]
 name = "qtquick3d-opencv-helpers"
 version = "0.1.0"
-source = { virtual = "." }
+source = { editable = "." }
 dependencies = [
     { name = "opencv-python" },
     { name = "pyside6" },
+]
+
+[package.dev-dependencies]
+dev = [
+    { name = "qtquick3d-opencv-helpers" },
 ]
 
 [package.metadata]
@@ -206,6 +211,9 @@ requires-dist = [
     { name = "opencv-python", specifier = ">=4.12.0.88" },
     { name = "pyside6", specifier = ">=6.9.2" },
 ]
+
+[package.metadata.requires-dev]
+dev = [{ name = "qtquick3d-opencv-helpers", editable = "." }]
 
 [[package]]
 name = "shiboken6"

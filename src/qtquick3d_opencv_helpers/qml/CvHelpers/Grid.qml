@@ -1,6 +1,6 @@
 import QtQuick
 import QtQuick3D
-import CustomGrid 1.0
+import CvHelpers
 
 Node {
     id: root

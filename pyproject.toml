@@ -18,3 +18,16 @@ include_package_data = true
 
 [tool.setuptools.package-data]
 "qtquick3d_opencv_helpers" = ["qml/CvHelpers/*", "qml/CvHelpers/qmldir"]
+
+[tool.uv.workspace]
+members = [
+    ".",
+]
+
+[tool.uv.sources]
+qtquick3d-opencv-helpers = { workspace = true }
+
+[dependency-groups]
+dev = [
+    "qtquick3d-opencv-helpers",
+]
